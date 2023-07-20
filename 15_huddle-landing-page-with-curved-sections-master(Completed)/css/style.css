@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+:root {
+    --color-primary-pink: #ff52bf;
+    --color-pink-light: #ff8fd8;
+    --color-light-red: #ff4242;
+    --color-dark-cyan: #00252e;
+    --color-pale-cyan: #f5faff;
+}
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: inherit;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+}
+/* HELPER CLASESS */
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.container-sm {
+    max-width: 50%;
+    margin: 0 auto;
+}
+.mb-small {
+    margin-bottom: 2rem;
+}
+.grid-2-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.heading__primary {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 4.5rem;
+}
+.para__primary {
+    font-size: 1.7rem;
+    color: var(--color-dark-cyan);
+}
+.curve {
+    width: 100%;
+    display: block;
+}
+.btn {
+    border: none;
+    background-color: transparent;
+    border-radius: 100px;
+    cursor: pointer;
+    box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.2);
+}
+.btn__primary {
+    padding: 1rem 3rem;
+}
+.btn__secondary {
+    padding: 2rem 5rem;
+}
+/* HEADER */
+.header {
+    padding: 1rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+}
+.logo {
+    width: 90%;
+}
+.header__btn {
+    color: var(--color-primary-pink);
+    background-color: var(--color-pale-cyan);
+    border: 1px solid var(--color-primary-pink);
+    transition: all 0.2s;
+}
+.header__btn:hover {
+    color: var(--color-pink-light);
+    border: 1px solid var(--color-pink-light);
+}
+/* HERO */
+.section__hero {
+    text-align: center;
+}
+.hero__btn {
+    font-family: inherit;
+    font-size: 1.7rem;
+    background-color: var(--color-primary-pink);
+    color: var(--color-pale-cyan);
+    font-weight: 600;
+    border: 1px solid var(--color-primary-pink);
+    transition: all 0.2s;
+}
+.hero__btn:hover {
+    background-color: var(--color-pink-light);
+    border: 1px solid var(--color-pink-light);
+}
+.hero__image {
+    display: block;
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    margin: 5rem auto;
+}
+/* ACHIEVEMENTS */
+.section__achievements-icon {
+    display: block;
+}
+.section__achievements-text {
+    font-size: 8rem;
+    font-weight: 700;
+}
+.section__achievements-desc {
+    font-size: 1.5rem;
+    opacity: 0.5;
+}
+.col {
+    justify-self: center;
+}
+/* FEATURES */
+.feature {
+    padding: 1rem 2rem;
+}
+.section__feature-cover {
+    width: 70%;
+}
+.section__feature-content {
+    align-self: center;
+}
+.feature--1,
+.feature--3 {
+    background-color: #f6fbff;
+}
+/* REGISTER */
+.section__register {
+    text-align: center;
+    margin: 10rem 0;
+}
+
+/* FOOTER */
+.footer__curve {
+    display: block;
+    width: 100%;
+}
+.footer {
+    background-color: var(--color-dark-cyan);
+    color: var(--color-pale-cyan);
+    padding: 1rem 1rem;
+}
+.footer-col {
+    padding: 5rem 0 0 0;
+    margin-bottom: 2rem;
+}
+.footer__logo {
+    fill: var(--color-pale-cyan);
+}
+.footer__text {
+    width: 50%;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    font-weight: 400;
+}
+.footer__list {
+    margin: 2rem 0;
+    list-style: none;
+}
+.footer__list-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 1rem;
+}
+.footer__social-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.social__icon {
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer__heading {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+.footer__form {
+    margin-top: 2rem;
+}
+.footer__form {
+    display: flex;
+    gap: 3rem;
+}
+.footer__input,
+.btn__footer {
+    padding: 1.5rem 3rem;
+}
+.btn__footer {
+    color: var(--color-pale-cyan);
+    background-color: var(--color-primary-pink);
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: 50.5%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .container-sm {
+        max-width: 60%;
+    }
+    .grid-2-col {
+        gap: 0rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-2-col {
+        grid-template-columns: 1fr;
+        text-align: center;
+        row-gap: 2rem;
+    }
+    .footer-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
