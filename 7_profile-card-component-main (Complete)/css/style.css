@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+    --color-dark-blue: #2d3248;
+    --color-cyan: #19a2ae;
+    --color-gray-blue: #6a6f81;
+    --color-dark-gray: #969696;
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 62.5%;
+    box-sizing: inherit;
+}
+body {
+    font-family: "Kumbh Sans", sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-cyan);
+}
+.card {
+    max-width: 75rem;
+    width: 40rem;
+    min-width: 30rem;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card__bg img {
+    display: block;
+    width: 100%;
+}
+.card__content {
+    padding: 0 5rem;
+}
+.card__user img {
+    border-radius: 50%;
+    border-radius: 5px solid #fff;
+    margin-top: -4rem;
+}
+
+.card__details {
+    font-size: 2rem;
+    color: var(--color-dark-blue);
+    font-weight: 700;
+    margin-top: 2rem;
+}
+.card__details span {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--color-gray-blue);
+}
+.card__location {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: var(--color-gray-blue);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.card__stats {
+    width: 100%;
+    padding: 3rem;
+    border-top: 0.5px solid var(--color-dark-gray);
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+}
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.count {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--color-dark-blue);
+}
+.detail {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    color: var(--color-gray-blue);
+}
+@media only screen and (max-width: 400px) {
+    .card__stats {
+        padding: 2rem 0;
+    }
+}
