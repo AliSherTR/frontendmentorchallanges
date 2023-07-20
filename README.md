@@ -1,5 +1,6 @@
 # frontendmentorchallanges
-this repository contains all the front end mentor challanges that i have completed
+This repository contains all the front end mentor challanges that I have completed.
 
-These are only the challanges that are done using html and css and are completely mobile responsive
+# What technologies are used?
+These are only the challanges that are done using html and css and are completely mobile responsive. A little bit of SaaS is also used in some project.
 
