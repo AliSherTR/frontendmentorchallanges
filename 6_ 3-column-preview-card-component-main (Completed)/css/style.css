@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+:root {
+    --color-bright-orange: hsl(31, 77%, 52%);
+    --color-dark-cyan: hsl(184, 100%, 22%);
+    --color-dark-cyan-2: hsl(179, 100%, 13%);
+    --color-paragraph: hsla(0, 0%, 100%, 0.75);
+    --color-light-gray: hsl(0, 0%, 95%);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: inherit;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-content: center;
+    justify-items: center;
+}
+.cards {
+    grid-column: 2 / 12;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.card {
+    padding: 5rem;
+    display: grid;
+    grid-template-rows: repeat(3, max-content) 15rem;
+    row-gap: 2rem;
+}
+.card__heading {
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 700;
+    font-size: 4rem;
+    color: var(--color-light-gray);
+}
+.card__text {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: var(--color-paragraph);
+}
+.card__btn {
+    display: block;
+    box-sizing: content-box;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    width: 70%;
+    justify-self: left;
+    align-self: end;
+    padding: 1.7rem;
+    border-radius: 100px;
+    border: 2px solid transparent;
+    background-color: var(--color-light-gray);
+    cursor: pointer;
+}
+.card__1 {
+    background-color: var(--color-bright-orange);
+}
+.card__2 {
+    background-color: var(--color-dark-cyan);
+}
+.card__3 {
+    background-color: var(--color-dark-cyan-2);
+}
+.btn__sedan {
+    color: var(--color-bright-orange);
+    transition: all 0.2s;
+}
+.btn__sedan:hover {
+    background-color: var(--color-bright-orange);
+}
+.btn__sedan:hover,
+.btn__suv:hover,
+.btn__luxury:hover {
+    color: var(--color-light-gray);
+    border: 2px solid #ffff;
+}
+.btn__suv {
+    color: var(--color-dark-cyan);
+    transition: all 0.2s;
+}
+.btn__suv:hover {
+    background-color: var(--color-dark-cyan);
+}
+.btn__luxury {
+    color: var(--color-dark-cyan-2);
+    transition: all 0.2s;
+}
+.btn__luxury:hover {
+    background-color: var(--color-dark-cyan-2);
+}
+@media only screen and (max-width: 900px) {
+    .card {
+        padding: 2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        grid-template-rows: repeat(3, max-content) 10rem;
+    }
+}
