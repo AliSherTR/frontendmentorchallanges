@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+:root {
+    --color-dark-magenta: hsl(300, 43%, 22%);
+    --color-soft-pink: hsl(333, 80%, 67%);
+    --color-dark-gray-magenta: hsl(303, 10%, 53%);
+    --color-light-gray-magenta: hsl(300, 24%, 96%);
+    --color-white: hsl(0, 0%, 100%);
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: inherit;
+}
+body {
+    font-family: "League Spartan", sans-serif;
+}
+.container {
+    max-width: 120rem;
+    min-width: 30rem;
+    margin: 0 auto;
+    padding: 10rem 9rem;
+}
+.social__proof {
+    display: grid;
+    grid-template-columns: 36rem 1fr;
+    row-gap: 2rem;
+    column-gap: 9rem;
+}
+.social__proof-description {
+    grid-column: 1 /2;
+    grid-row: 1 / 1;
+}
+.heading--primary {
+    font-size: 5rem;
+    line-height: 0.8;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: var(--color-dark-magenta);
+    margin-bottom: 2rem;
+}
+.paragraph {
+    color: var(--color-dark-gray-magenta);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.social__proof-rating {
+    grid-column: 2 /3;
+    grid-row: 1 / 1;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-content: center;
+    row-gap: 2rem;
+}
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--color-light-gray-magenta);
+    padding: 2rem 1rem;
+    border-radius: 10px;
+}
+.star__rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.rating__text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-dark-magenta);
+}
+.raing__stars:not(:last-child) {
+    margin-right: 2px;
+}
+.rating--1 {
+    grid-column: 1 / 10;
+}
+.rating--2 {
+    grid-column: 2 / 11;
+}
+.rating--3 {
+    grid-column: 3 / 12;
+}
+.social__proof-cards {
+    grid-column: 1 /-1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    column-gap: 2rem;
+    row-gap: 1rem;
+}
+.card {
+    padding: 3rem 5rem;
+    background-color: var(--color-dark-magenta);
+    border-radius: 10px;
+}
+.card__details {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 1rem;
+    margin-bottom: 2rem;
+}
+.card__details img {
+    grid-row: 1 /-1;
+    height: 5rem;
+    width: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.name {
+    align-self: flex-end;
+    color: var(--color-white);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.badge {
+    color: var(--color-soft-pink);
+    font-size: 1.5rem;
+}
+.card__text {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--color-white);
+}
+.card--2 {
+    transform: translateY(1rem);
+}
+.card--3 {
+    transform: translateY(2rem);
+}
+@media only screen and (max-width: 1000px) {
+    html {
+        font-size: 50%;
+    }
+    .rating {
+        padding: 2rem 1rem;
+    }
+    .container {
+        padding: 5rem 5rem;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .social__proof {
+        grid-template-columns: 1fr;
+    }
+    .social__proof-rating {
+        grid-column: 1 /-1;
+        grid-row: 2/2;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .social__proof-description {
+        text-align: center;
+    }
+    .rating {
+        flex-direction: column;
+    }
+    .rating--1,
+    .rating--2,
+    .rating--3 {
+        grid-column: 1 / -1;
+    }
+    .card--2,
+    .card--3 {
+        transform: translateY(0);
+    }
+}
