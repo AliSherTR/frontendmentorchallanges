@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+        <link rel="stylesheet" href="./css/style.css" />
+
+        <title>
+            Frontend Mentor | Fylo landing page with two column layout
+        </title>
+
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    </head>
+    <body>
+        <div class="container">
+            <header class="header mb-medium">
+                <img
+                    src="./images/logo.svg"
+                    alt="Fylo Logo"
+                    class="header__logo"
+                />
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__list-item">
+                            <a href="#" class="header__list-link">Features</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#" class="header__list-link">Team</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#" class="header__list-link">Sign In</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="container">
+            <main class="main-container">
+                <section class="section__hero mb-large">
+                    <div class="grid-2-col">
+                        <div class="section__hero-content">
+                            <h1 class="heading--primary mb-small">
+                                All your files in one secure location,
+                                accessible anywhere.
+                            </h1>
+                            <p class="text--primary mb-small">
+                                Fylo stores your most important files in one
+                                secure location. Access them wherever you need,
+                                share and collaborate with friends, family, and
+                                co-workers.
+                            </p>
+                            <form action="" class="section__hero-form">
+                                <input
+                                    type="email"
+                                    class="form__email"
+                                    placeholder="Enter Your Email"
+                                />
+                                <button class="btn btn-primary form--btn">
+                                    Get Started
+                                </button>
+                            </form>
+                        </div>
+                        <div class="section__hero-cover">
+                            <img
+                                src="./images/illustration-1.svg"
+                                alt=""
+                                class="section__hero-image"
+                            />
+                        </div>
+                    </div>
+                </section>
+                <section class="section__promotion">
+                    <div class="grid-2-col">
+                        <div class="section__promotion-content">
+                            <h1 class="heading--secondary mb-medium">
+                                Stay productive, wherever you are
+                            </h1>
+                            <p class="text--primary mb-small">
+                                Never let location be an issue when accessing
+                                your files. Fylo has you covered for all of your
+                                file storage needs.
+                            </p>
+                            <p class="text--primary mb-small">
+                                Securely share files and folders with friends,
+                                family and colleagues for live collaboration. No
+                                email attachments required!
+                            </p>
+                            <a href="#" class="btn--secondary">
+                                See how Fylo works &rarr;
+                            </a>
+                            <div class="section__promotion-testimonial">
+                                <p class="testimonial-text">
+                                    Fylo has improved our team productivity by
+                                    an order of magnitude. Since making the
+                                    switch our team has become a well-oiled
+                                    collaboration machine.
+                                </p>
+                                <div class="testimonial__footer">
+                                    <div class="user__image">
+                                        <img
+                                            src="./images/avatar-testimonial.jpg"
+                                            alt=""
+                                            class="testimonial__user-image"
+                                        />
+                                    </div>
+                                    <div class="user__details">
+                                        <p class="user__name">Kyle Burton</p>
+                                        <span class="user__designation">
+                                            Founder & CEO, Huddle
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__promotion-cover">
+                            <img
+                                src="./images/illustration-2.svg"
+                                alt=""
+                                class="section__promotion-image"
+                            />
+                        </div>
+                    </div>
+                </section>
+                <section class="section__registration">
+                    <div class="grid-2-col">
+                        <div class="section__registration-content">
+                            <h1
+                                class="heading--secondary heading-light mb-medium"
+                            >
+                                Get early access today
+                            </h1>
+                            <p class="text--primary text-light">
+                                It only takes a minute to sign up and our free
+                                starter tier is extremely generous. If you have
+                                any questions, our support team would be happy
+                                to help you.
+                            </p>
+                        </div>
+                        <div class="section__registration-form">
+                            <input
+                                type="email"
+                                class="form__input"
+                                placeholder="email@example.com"
+                            />
+                            <button
+                                class="btn btn-primary form--btn registration__btn"
+                            >
+                                Get Started For Free
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <div class="footer-grid">
+                    <div class="col footer__address">
+                        <ul class="footer__address-list">
+                            <li class="footer__icon">
+                                <img
+                                    src="./images/icon-phone.svg"
+                                    alt=""
+                                    class="footer__icon-comp"
+                                />
+                                <span>Phone: +1-543-123-4567</span>
+                            </li>
+                            <li class="footer__icon">
+                                <img
+                                    src="./images/icon-email.svg"
+                                    alt=""
+                                    class="footer__icon-comp"
+                                />
+                                <span>example@fylo.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col footer__list">
+                        <ul class="footer__list-links">
+                            <li class="footer__icon">
+                                <a href="#" class="footer__link">About Us</a>
+                            </li>
+                            <li class="footer__icon">
+                                <a href="#" class="footer__link">Jobs</a>
+                            </li>
+                            <li class="footer__icon">
+                                <a href="#" class="footer__link">Press</a>
+                            </li>
+                            <li class="footer__icon">
+                                <a href="#" class="footer__link">Blog</a>
+                            </li>
+                            <li class="footer__icon">
+                                <a href="#" class="footer__link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col footer__icons">
+                        <a href="#" class="social__link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                        <a href="#" class="social__link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                        <a href="#" class="social__link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- 
+  
+  
+
+
+
+
+
+
+  
+
+ 
+
+ 
+
+ 
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  Terms
+  Privacy -->
+
+        <!-- <footer>
+            <p class="attribution">
+                Challenge by
+                <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                >
+                    Frontend Mentor
+                </a>
+                . Coded by
+                <a href="#">Your Name Here</a>
+                .
+            </p>
+        </footer> -->
+    </body>
+</html>
