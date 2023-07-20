@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+:root {
+    --color-moderate-voilet: rgb(117, 65, 200);
+    --color-dark-grayish-blue: rgb(72, 85, 106);
+    --color-dark-blackish-blue: rgb(25, 33, 46);
+    --color-white: rgb(255, 255, 255);
+    --color-light-gray: rgb(207, 207, 207);
+    --color-light-grayblue: rgb(236, 242, 248);
+    /* Note for text colors:
+
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity */
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: inherit;
+}
+body {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-light-grayblue);
+}
+.container {
+    max-width: 100rem;
+}
+.testimonials__grid {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+.grid--item-1 {
+    grid-column: 1 /3;
+    background-image: url("../images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: 72% 10%;
+    background-color: var(--color-moderate-voilet);
+    color: var(--color-light-grayblue);
+}
+.grid--item-2 {
+    background-color: var(--color-dark-grayish-blue);
+    grid-column: 3 /4;
+    color: var(--color-light-grayblue);
+}
+.grid--item-3 {
+    grid-column: 4 /5;
+    grid-row: 1 / span 2;
+    color: var(--color-dark-grayish-blue);
+    background-color: var(--color-white);
+}
+.grid--item-4 {
+    grid-column: 1 / 2;
+    color: var(--color-dark-grayish-blue);
+    background-color: var(--color-white);
+}
+.grid--item-5 {
+    grid-column: 2 /4;
+    color: var(--color-white);
+    background-color: var(--color-dark-blackish-blue);
+}
+.grid--item {
+    padding: 2rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 6rem rgba(0, 0, 0, 0.2);
+}
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+.header__img img {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    border: 3px solid var(--color-white);
+}
+.details {
+    margin-left: -3rem;
+}
+.name {
+    font-size: 1.3rem;
+}
+.badge {
+    font-size: 1rem;
+    opacity: 0.5;
+}
+.testimonial__heading {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.testimonial__text {
+    font-size: 1.2rem;
+    color: inherit;
+    opacity: 0.7;
+    font-weight: 500;
+}
+@media only screen and (max-width: 800px) {
+    body {
+        height: auto;
+    }
+    .testimonials__grid {
+        grid-template-columns: 1fr;
+    }
+    .grid--item {
+        grid-column: 1 /-1;
+    }
+    .grid--item-3 {
+        grid-row: 6 /7;
+    }
+}
