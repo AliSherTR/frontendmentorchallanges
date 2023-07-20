@@ -1,0 +1,11 @@
+{
+    "name": "2_qr-code-component-main",
+    "version": "1.0.0",
+    "description": "QR component desing and build challange by frontendmentor",
+    "main": "index.js",
+    "scripts": {
+        "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    },
+    "author": "ali sher khan",
+    "license": "ISC"
+}

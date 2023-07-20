@@ -1,0 +1,21 @@
+// variables
+$color-white: #ffffff;
+$color-light-gray: #d6e2f0;
+$color-blue-gray: #7b879d;
+$color-dark-blue: #1f3251;
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%; // 1rem = 10px
+    box-sizing: inherit;
+}
+body {
+    font-family: "Outfit", sans-serif;
+}
