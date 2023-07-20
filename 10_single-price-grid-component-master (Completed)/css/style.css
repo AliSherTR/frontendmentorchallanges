@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+:root {
+    --color-primary-cyan: rgb(42, 178, 175);
+    --color-primary-yellow: hsl(71, 73%, 54%);
+    --color-gray-light: hsl(204, 43%, 93%);
+    --color-gray-blue: hsl(218, 22%, 67%);
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: inherit;
+}
+body {
+    font-family: "Karla", sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-gray-blue);
+}
+.container {
+    display: block;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.pricing {
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
+}
+.grid-item {
+    padding: 4rem 4rem;
+}
+.main {
+    background-color: var(--color-gray-light);
+    grid-column: 1 / span 2;
+}
+.col-1 {
+    background-color: var(--color-primary-cyan);
+    grid-column: 1 / 1;
+}
+.col-3 {
+    grid-column: 2 / -1;
+    background-color: rgba(42, 178, 175, 0.5);
+}
+.heading-primary {
+    color: var(--color-primary-cyan);
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+.heading-secondary {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+.heading-tertiary {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: var(--color-gray-light);
+}
+.heading-yellow {
+    color: var(--color-primary-yellow);
+}
+.heading-white {
+    color: var(--color-gray-light);
+}
+.paragraph-primary {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.paragraph-light {
+    color: var(--color-gray-blue);
+}
+.paragraph-dark {
+    color: var(--color-gray-light);
+    margin-bottom: 2rem;
+}
+.pricing__info {
+    padding: 1rem 0;
+    color: var(--color-gray-light);
+}
+.price__info {
+    font-size: 3.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+.price__info span {
+    font-size: 2rem;
+    margin-left: 0.7rem;
+    font-weight: 400;
+}
+.btn-primary {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: var(--color-primary-yellow);
+    font-family: inherit;
+    color: var(--color-gray-light);
+    font-weight: 700;
+    font-size: 1.5rem;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
+}
+.features__list {
+    list-style: none;
+    color: var(--color-gray-light);
+    font-size: 1.3rem;
+}
+.feature-item:not(:last-child) {
+    margin-bottom: 0.7rem;
+}
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 60%;
+    }
+    .grid-item {
+        padding: 3rem 3rem;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .pricing {
+        grid-template-columns: 1fr;
+        width: 80%;
+    }
+    .col-1 {
+        grid-row: 2 / 2;
+    }
+    .col-3 {
+        grid-column: 1 / -1;
+        grid-row: 3 / 3;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .pricing {
+        width: 90%;
+    }
+}
